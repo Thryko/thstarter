@@ -38,6 +38,7 @@
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
+            <div class="site-branding__text">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
@@ -51,7 +52,7 @@
 			endif; ?>
             
             
-            
+            </div>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
